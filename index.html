@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+<h1 id="title">Formulario</h1> 
+<p id="descripcion">Rellena con tu informacion los campos</p>
+    <form action="#" method="post" id="survey-form">
+        <fieldset>
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input type="text" name="nombre" id="name" class="form-control" placeholder="Ingresa tu nombre" required="">
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Introduce tu correo" required="">
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number">Edad</label>
+                <input type="number" name="edad" id="number" min="10" max="99" class="form-control" placeholder="Introduce tu edad">
+              </div>
+            <label for=""></label>
+            </fieldset>
+            <fieldset>
+              <div class="form-group"></div>
+               <p>Tipo de rol</p>
+                <label for="si">
+                    <input type="radio" name="tipo-cuenta" class="enlinea" checked>Estudiante
+                </label>
+                <label for="docente">
+                    <input type="radio" name="tipo-cuenta" class="enlinea"checked>Docente
+                </label>
+                    <label for="invitado">
+                        <input type="radio" name="tipo-cuenta" id="enlinea"checked>invitado
+                    </label>
+            </fieldset>
+            <div class="form-group">
+                <p>Ya tienes cuenta</p>
+                <select id="dropdown" name="role" class="form-control" required="">
+                  <option disabled="" selected="" value="">Selecciona</option>
+                  <option value="1">si</option>
+                  <option value="2">no</option>
+                  <option value="3">quizas</option>
+                  <option value="4">en otro momento</option>
+                  <option value="5">Otro</option>
+                </select>
+              </div>
+              <p>
+                tipo de carrera
+                <span class="clue"> (puedes seleccionar mas de dos) </span>
+              </p>
+              <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Informatica
+            </label>
+            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Medicina
+            </label>
+            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Fisica
+            </label>
+            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Docente
+            </label>
+            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">otro
+            </label>
+            <div class="form-group">
+              <p>Escribe algun comantario</p>
+              <textarea id="comments" class="input-textarea" name="comment" placeholder="Ingresa tu comentario aqui"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-buttom"> Enviar</button>
+   </div>
+</body>
+</html>
